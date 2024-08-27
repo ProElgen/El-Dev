@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6600;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.cta:hover {
+    background-color: #cc5200;
+}
+
+/* Brief Introduction */
+.brief-intro {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.brief-intro p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 0;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.portfolio-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-section button:hover {
+    background-color: #cc5200;
+}
+
+.contact-details {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Slide-in Animation */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Class to activate the animation */
+.slide-in-left.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* General cover styling */
+.cover {
+    background-color: pink; /* Change to your desired color */
+    padding: 50px 0;
+    margin-bottom: 50px; /* Adds some space after the section */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* Adjust container within the cover */
+.cover .container {
+    padding: 20px;
+}
+
+/* Positioning the name to the top-left */
+.hero-section .hero-content h1 {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 20px;
+    font-size: 2em;
+    color: white;
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+/* Scribble effect */
+.scribble-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.scribble-effect::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url('scribble.png') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Centering "Personal Website" with typing animation */
+.typing-animation {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 20ch; /* Set a fixed width that matches the longest text */
+    border-right: 2px solid white;
+    animation: typing 10s steps(20, end) infinite;
+}
+
+/* Keyframes for typing different texts */
+@keyframes typing {
+    0%, 10% { width: 0; } /* Start with nothing */
+    10%, 30% { width: 13ch; } /* Typing "I am a programmer" */
+    30%, 40% { width: 0; } /* Erase */
+    40%, 60% { width: 11ch; } /* Typing "I am a form AI" */
+    60%, 70% { width: 0; } /* Erase */
+    70%, 90% { width: 13ch; } /* Typing "I am a designer" */
+    90%, 100% { width: 0; } /* Erase */
+}
+
+/* Keyframes for blink-caret */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* Additional styling for the blink-caret effect */
+.typing-animation::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-right: 2px solid white;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Positioning "Elgen Prawira" above the "Personal Website" animation */
+.hero-section .hero-content {
+    position: relative;
+}
+
+/* Adjusting the position of the name */
+.hero-section .hero-content h1 {
+    position: relative;
+    top: -50px; /* Adjust this value to control the space between the name and the "Personal Website" */
+    left: 0;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+/* Positioning the name and keeping it above the animation */
+.hero-section .hero-content h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 4em;
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Adjusting the container to ensure proper alignment */
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
